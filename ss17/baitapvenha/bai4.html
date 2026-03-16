@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 4 - Lưu thông tin cá nhân</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lưu thông tin cá nhân</h1>
+
+    <form id="profileForm">
+      <input 
+        type="text" 
+        id="name" 
+        placeholder="Họ và tên" 
+        required
+      >
+      <input 
+        type="number" 
+        id="age" 
+        placeholder="Tuổi" 
+        min="1" 
+        required
+      >
+      <button type="submit">Lưu thông tin</button>
+      <button type="button" id="deleteBtn">Xóa hồ sơ</button>
+    </form>
+
+    <div class="result" id="result">
+      Chưa có thông tin cá nhân
+    </div>
+  </div>
+  <script src="./bai4.js"></script>
+</body>
+</html>
